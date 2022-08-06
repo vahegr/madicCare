@@ -1,3 +1,4 @@
+{% load static %}
 <!doctype html>
 <html lang="en">
     <head>
@@ -16,15 +17,15 @@
         
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
 
-        <link href="css/bootstrap-icons.css" rel="stylesheet">
+        <link href="{% static 'css/bootstrap-icons.css' %}" rel="stylesheet">
 
-        <link href="css/owl.carousel.min.css" rel="stylesheet">
+        <link href="{% static 'css/owl.carousel.min.css' %}" rel="stylesheet">
 
-        <link href="css/owl.theme.default.min.css" rel="stylesheet">
+        <link href="{% static 'css/owl.theme.default.min.css' %}" rel="stylesheet">
 
-        <link href="css/templatemo-medic-care.css" rel="stylesheet">
+        <link href="{% static 'css/templatemo-medic-care.css' %}" rel="stylesheet">
 <!--
 
 TemplateMo 566 Medic Care
@@ -93,15 +94,15 @@ https://templatemo.com/tm-566-medic-care
                             <div id="myCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
                                 <div class="carousel-inner">
                                     <div class="carousel-item active">
-                                        <img src="images/slider/portrait-successful-mid-adult-doctor-with-crossed-arms.jpg" class="img-fluid" alt="">
+                                        <img src="{% static 'images/slider/portrait-successful-mid-adult-doctor-with-crossed-arms.jpg' %}" class="img-fluid" alt="">
                                     </div>
 
                                     <div class="carousel-item">
-                                        <img src="images/slider/young-asian-female-dentist-white-coat-posing-clinic-equipment.jpg" class="img-fluid" alt="">
+                                        <img src="{% static 'images/slider/young-asian-female-dentist-white-coat-posing-clinic-equipment.jpg' %}" class="img-fluid" alt="">
                                     </div>
 
                                     <div class="carousel-item">
-                                        <img src="images/slider/doctor-s-hand-holding-stethoscope-closeup.jpg" class="img-fluid" alt="">
+                                        <img src="{% static 'images/slider/doctor-s-hand-holding-stethoscope-closeup.jpg' %}" class="img-fluid" alt="">
                                     </div>
                                 </div>
                             </div>
@@ -158,11 +159,11 @@ https://templatemo.com/tm-566-medic-care
                     <div class="row">
 
                         <div class="col-lg-6 col-6 ps-0">
-                            <img src="images/gallery/medium-shot-man-getting-vaccine.jpg" class="img-fluid galleryImage" alt="get a vaccine" title="get a vaccine for yourself">
+                            <img src="{% static 'images/gallery/medium-shot-man-getting-vaccine.jpg' %}" class="img-fluid galleryImage" alt="get a vaccine" title="get a vaccine for yourself">
                         </div>
 
                         <div class="col-lg-6 col-6 pe-0">
-                            <img src="images/gallery/female-doctor-with-presenting-hand-gesture.jpg" class="img-fluid galleryImage" alt="wear a mask" title="wear a mask to protect yourself">
+                            <img src="{% static 'images/gallery/female-doctor-with-presenting-hand-gesture.jpg' %}" class="img-fluid galleryImage" alt="wear a mask" title="wear a mask to protect yourself">
                         </div>
 
                     </div>
@@ -285,7 +286,7 @@ https://templatemo.com/tm-566-medic-care
 
                                     <p class="reviews-text w-100">Phasellus ligula ante, tempus ac imperdiet ut, mattis ac nibh. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
 
-                                    <img src="images/reviews/beautiful-woman-face-portrait-brown-background.jpeg" class="img-fluid reviews-image" alt="">
+                                    <img src="{% static 'images/reviews/beautiful-woman-face-portrait-brown-background.jpeg' %}" class="img-fluid reviews-image" alt="">
 
                                     <figcaption class="ms-4">
                                         <strong>Marie</strong>
@@ -307,7 +308,7 @@ https://templatemo.com/tm-566-medic-care
 
                                     <p class="reviews-text w-100">Donec in elementum orci, nec posuere ligula. Quisque vulputate diam et ullamcorper ullamcorper. Pellentesque vestibulum neque at leo fermentum mattis.</p>
 
-                                    <img src="images/reviews/senior-man-wearing-white-face-mask-covid-19-campaign-with-design-space.jpeg" class="img-fluid reviews-image" alt="">
+                                    <img src="{% static 'images/reviews/senior-man-wearing-white-face-mask-covid-19-campaign-with-design-space.jpeg' %}" class="img-fluid reviews-image" alt="">
 
                                     <figcaption class="ms-4">
                                         <strong>Ben Walker</strong>
@@ -329,7 +330,7 @@ https://templatemo.com/tm-566-medic-care
 
                                     <p class="reviews-text w-100">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Donec sit amet velit vitae purus aliquam efficitur.</p>
 
-                                    <img src="images/reviews/portrait-british-woman.jpeg" class="img-fluid reviews-image" alt="">
+                                    <img src="{% static 'images/reviews/portrait-british-woman.jpeg' %}" class="img-fluid reviews-image" alt="">
 
                                     <figcaption class="ms-4">
                                         <strong>Laura Zono</strong>
@@ -351,7 +352,7 @@ https://templatemo.com/tm-566-medic-care
 
                                     <p class="reviews-text w-100">Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Maecenas faucibus mollis interdum. Donec ullamcorper nulla non metus auctor fringilla.</p>
 
-                                    <img src="images/reviews/woman-wearing-mask-face-closeup-covid-19-green-background.jpeg" class="img-fluid reviews-image" alt="">
+                                    <img src="{% static 'images/reviews/woman-wearing-mask-face-closeup-covid-19-green-background.jpeg' %}" class="img-fluid reviews-image" alt="">
 
                                     <figcaption class="ms-4">
                                         <strong>Rosey</strong>
@@ -470,17 +471,10 @@ https://templatemo.com/tm-566-medic-care
         </footer>
 
         <!-- JAVASCRIPT FILES -->
-        <script src="js/jquery.min.js"></script>
-        <script src="js/bootstrap.bundle.min.js"></script>
-        <script src="js/owl.carousel.min.js"></script>
-        <script src="js/scrollspy.min.js"></script>
-        <script src="js/custom.js"></script>
-<!--
-
-TemplateMo 566 Medic Care
-
-https://templatemo.com/tm-566-medic-care
-
--->
+        <script src="{% static 'js/jquery.min.js'%}"></script>
+        <script src="{% static 'js/bootstrap.bundle.min.js'%}"></script>
+        <script src="{% static 'js/owl.carousel.min.js'%}"></script>
+        <script src="{% static 'js/scrollspy.min.js'%}"></script>
+        <script src="{% static 'js/custom.js'%}"></script>
     </body>
 </html>
