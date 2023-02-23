@@ -2,5 +2,5 @@ from django.shortcuts import render
 from django.views.generic import ListView, TemplateView
 
 
-class HomePage(TemplateView):
-    pass
+def index_page(request):
+    return render(request, "index.html", context={})
